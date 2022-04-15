@@ -65,8 +65,8 @@
                     <img src="{% static 'images/logo1.png' %}" alt="" class="img1">
                     <h1>Movie Man</h1>
                     <form class="form-inline">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search Movies Here" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search Movies Here" aria-label="Search" id="text">
+                      <button class="btn btn-outline-success my-2 my-sm-0" onclick="search()" type="submit">Search</button>
                     </form>
                 </nav>
                 <hr color="white">
@@ -156,7 +156,75 @@
         </div>
     </div>
            
-        
+     <script>
+         function search(){
+            var search = document.getElementById('text')
+            if(search.value == ""){
+                document.getElementById(alert("Please Enter The Movie Name In Small Letter"))
+            }
+             if(search.value=="the godfather"){
+                 window.open("https://arun955.w3spaces.com/thegodfather.html")
+                 return true
+             }
+             if(search.value=="the dark knight"){
+                 window.open("https://arun955.w3spaces.com/thedarkknight.html")
+                 return true
+             }
+             if(search.value=="inception"){
+                 window.open("https://arun955.w3spaces.com/inception.html")
+             }
+             if(search.value=="seven"){
+                 window.open("https://arun955.w3spaces.com/seven.html")
+                 return true
+             }
+             if(search.value=="interstellar"){
+                 window.open("https://arun955.w3spaces.com/interstellar.html")
+                 return true
+             }
+             if(search.value=="gladiator"){
+                 window.open("https://arun955.w3spaces.com/gladiator.html")
+             }
+             if(search.value=="memento"){
+                 window.open("https://arun955.w3spaces.com/memento.html")
+                 return true
+             }
+             if(search.value=="joker"){
+                 window.open("https://arun955.w3spaces.com/joker.html")
+                 return true
+             }
+             if(search.value=="1917"){
+                 window.open("https://arun955.w3spaces.com/1917.html")
+             }
+             if(search.value=="gandhi"){
+                 window.open("https://arun955.w3spaces.com/gandhi.html")
+                 return true
+             }
+             if(search.value=="logan"){
+                 window.open("https://arun955.w3spaces.com/logan.html")
+                 return true
+             }
+             if(search.value=="hacksaw ridge"){
+                 window.open("https://arun955.w3spaces.com/hacksawridge.html")
+             }
+             if(search.value=="the pursuit of happyness"){
+                 window.open("https://arun955.w3spaces.com/thepursuitofhappyness.html")
+                 return true
+             }
+             if(search.value=="the revenant"){
+                 window.open("https://arun955.w3spaces.com/revenant.html")
+                 return true
+             }
+             if(search.value=="san andreas"){
+                 window.open("https://arun955.w3spaces.com/sanandreas.html")
+             }
+             else{
+                document.getElementById(alert('Please Enter A Valid Movie Name'))
+                 return false
+             }
+    
+             
+         }
+     </script>   
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
