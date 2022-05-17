@@ -16,7 +16,7 @@
     }
   .img1{
         width: 250px;
-        height: 150px;
+        height: 180px;
         padding-left: 30px;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -55,6 +55,13 @@
         border-radius: 10px;
     
     }
+
+    .top{
+        position: fixed;
+        top: 70%;
+        transform: translateY(-70%);
+        padding-left: 1300px;
+    }
 </style>
 </head>
 <body>
@@ -62,7 +69,7 @@
         <div class="row">
             <div class="col-xs-12 col-lg-12">
                <nav class="navbar navbar-dark bg-black">
-                    <img src="{% static 'images/logo1.png' %}" alt="" class="img1">
+                    <img src="{% static 'images/logo2.png' %}" alt="" class="img1">
                     <h1>Movie Man</h1>
                     <form class="form-inline">
                       <input class="form-control mr-sm-2" type="search" placeholder="Search Movies Here" aria-label="Search" id="text">
@@ -146,7 +153,11 @@
                 <h2>San Andreas</h2>
                 <p>2015</p>
             </div>
-            <br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br>
+            <div class="top">
+                <a href="#top"><img src="https://i.ibb.co/qpGT425/top.png" width="90px"></a>
+            </div>
+            <br><br><br><br>
             
             <div class="col-xs-12 col-lg-12" style="color:white; background-color: darkslategrey; padding-top: 20px;">
                 <center><label>Ⓒ Movie Man @ 2021-2022</label><br>
