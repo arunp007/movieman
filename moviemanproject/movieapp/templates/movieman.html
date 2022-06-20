@@ -7,62 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Man Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-   <style>
-    .container-fluid{
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-top: 10px;
-    }
-  .img1{
-        width: 250px;
-        height: 180px;
-        padding-left: 30px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-  
-    h1{
-        color:white;
-        font-size: 70px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bolder;
-    }
-   
-    .img2{
-        width:300px;
-        height:400px;
-        border: 10px solid white;
-        border-radius: 10px;
-     
-    }
-  
-    h2{
-        color: white;
-        font-weight: bolder;
-        font-size: 40px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-  
-    p{
-        color: grey;
-        font-size: 20px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    }
-  
-    .img2:hover{
-        border: 10px solid green;
-        border-radius: 10px;
-    
-    }
-
-    .top{
-        position: fixed;
-        top: 70%;
-        transform: translateY(-70%);
-        padding-left: 1300px;
-    }
-</style>
+    <link rel="stylesheet" href="{% static 'css/movie_man_home.css' %}">
+    <script src="{% static 'javascript/movieman_search.js' %}"></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -72,7 +18,7 @@
                     <img src="{% static 'images/logo2.png' %}" alt="" class="img1">
                     <h1>Movie Man</h1>
                     <form class="form-inline">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search Movies Here" aria-label="Search" id="text">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search Movies Here" aria-label="Search" id="text">
                       <button class="btn btn-outline-success my-2 my-sm-0" onclick="search()" type="submit">Search</button>
                     </form>
                 </nav>
@@ -165,82 +111,7 @@
               </div>
 
         </div>
-    </div>
-           
-     <script>
-         function search(){
-            var search = document.getElementById('text')
-            if(search.value == ""){
-                document.getElementById(alert("Please Enter The Movie Name In Small Letter"))
-            }
-             if(search.value=="the godfather" || search.value=="The godfather" || search.value=="THE GODFATHER"){
-                window.open("https://arun955.w3spaces.com/thegodfather.html")
-                return true
-             }
-             if(search.value=="the dark knight" || search.value=="The dark knight" || search.value=="THE DARK KNIGHT"){
-                window.open("https://arun955.w3spaces.com/thedarkknight.html")
-                return true
-             }
-             if(search.value=="inception" || search.value=="Inception" || search.value=="INCEPTION"){
-                window.open("https://arun955.w3spaces.com/inception.html")
-                return true
-             }
-             if(search.value=="seven" || search.value=="Seven" || search.value=="SEVEN"){
-                window.open("https://arun955.w3spaces.com/seven.html")
-                return true
-             }
-             if(search.value=="interstellar" || search.value=="Interstellar" || search.value=="INTERSTELLAR"){
-                window.open("https://arun955.w3spaces.com/interstellar.html")
-                return true
-             }
-             if(search.value=="gladiator" || search.value=="Gladiator" || search.value=="GLADIATOR"){
-                window.open("https://arun955.w3spaces.com/gladiator.html")
-                return true
-             }
-             if(search.value=="memento" || search.value=="Memento" || search.value=="MEMENTO"){
-                window.open("https://arun955.w3spaces.com/memento.html")
-                return true
-             }
-             if(search.value=="joker" || search.value=="Joker" || search.value=="JOKER"){
-                window.open("https://arun955.w3spaces.com/joker.html")
-                return true
-             }
-             if(search.value=="1917"){
-                window.open("https://arun955.w3spaces.com/1917.html")
-                return true
-             }
-             if(search.value=="gandhi" || search.value=="Gandhi" || search.value=="GANDHI"){
-                window.open("https://arun955.w3spaces.com/gandhi.html")
-                return true
-             }
-             if(search.value=="logan" || search.value=="Logan" || search.value=="LOGAN"){
-                window.open("https://arun955.w3spaces.com/logan.html")
-                return true
-             }
-             if(search.value=="hacksawridge" || search.value=="Hacksawridge" || search.value=="HACKSAWRIDGE"){
-                window.open("https://arun955.w3spaces.com/hacksawridge.html")
-                return true
-             }
-             if(search.value=="the pursuit of happyness" || search.value=="The pursuit of happyness" || search.value=="THE PURSUIT OF HAPPYNESS"){
-                window.open("https://arun955.w3spaces.com/thepursuitofhappyness.html")
-                return true
-             }
-             if(search.value=="the revenant" || search.value=="The revenant" || search.value=="THE REVENANT"){
-                window.open("https://arun955.w3spaces.com/revenant.html")
-                return true
-             }
-             if(search.value=="sanandreas" || search.value=="Sanandreas" || search.value=="SANANDREAS"){
-                window.open("https://arun955.w3spaces.com/sanandreas.html")
-                return true
-             }
-             else{
-                document.getElementById(alert('Please Enter A Valid Movie Name'))
-                return false
-             }
-    
-             
-         }
-     </script>   
+    </div>   
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
